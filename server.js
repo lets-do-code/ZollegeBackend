@@ -17,6 +17,6 @@ app.use('/', EarningsRoute);
 
 
 app.listen(port, async () => {
-    await DatabaseConnection("mongodb+srv://eazotel:admin@cluster0.p0kewzl.mongodb.net/testhms")
+    await DatabaseConnection("mongodb://localhost:27017/multileveldistribution")
     console.log(`Server listening on ${port}`);
 })
